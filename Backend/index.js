@@ -16,7 +16,7 @@ cloudinaryConfig()
 
 app.use(express.json())
 
-const allowOrigins = ['http://localhost:5173', 'http://localhost:5174']
+const allowOrigins = ['https://deceptive-review-detection-admin.onrender.com']
 app.use(
   cors({
     origin: allowOrigins,
