@@ -3,6 +3,7 @@ import { DataContext } from '../../Context/Context'
 import axios from 'axios'
 import './login.css'
 import { NavLink, Navigate, useNavigate } from 'react-router-dom'
+import { backendURL } from '../../App'
 
 const Login = ({ setToken }) => {
   const { slider, setSlider } = useContext(DataContext)
@@ -12,7 +13,7 @@ const Login = ({ setToken }) => {
 
   const getUser = async () => {
     try {
-      const user = await axios.post('http://localhost:4000/user/admin', {
+      const user = await axios.post(backendURL + '/user/admin', {
         email,
         password,
       })
