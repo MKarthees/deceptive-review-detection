@@ -16,7 +16,7 @@ cloudinaryConfig()
 
 app.use(express.json())
 
-const allowOrigins = ['https://deceptive-review-detection-admin.onrender.com']
+const allowOrigins = ['https://deceptive-review-detection-admin.onrender.com','https://college-project-frontend.onrender.com']
 app.use(
   cors({
     origin: allowOrigins,
