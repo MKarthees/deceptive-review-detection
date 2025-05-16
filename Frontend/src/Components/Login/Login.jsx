@@ -34,6 +34,7 @@ const Login = ({ setToken }) => {
   return (
     <main className={`${slider == true ? 'container' : 'grid'}`}>
       <section className="login">
+        <div className="login-container">
         <h1>Login</h1>
         <div className="data-box">
           <input
@@ -56,6 +57,7 @@ const Login = ({ setToken }) => {
             <p>Click Here</p>
           </NavLink>
         </div>
+          </div>
       </section>
     </main>
   )

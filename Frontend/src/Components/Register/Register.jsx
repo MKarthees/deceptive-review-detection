@@ -3,7 +3,7 @@ import { DataContext } from '../../Context/Context'
 import axios from 'axios'
 import './register.css'
 import { NavLink } from 'react-router-dom'
-import { backendURL } from '../../App.jsx'
+import { backendURL } from '../../App'
 
 const Register = () => {
   const { slider, setSlider } = useContext(DataContext)
