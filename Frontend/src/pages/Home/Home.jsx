@@ -31,12 +31,14 @@ const Home = ({ token }) => {
           <h1>Top Product</h1>
           <div className="products">
             {product.slice(0, 3).map((item, index) => (
-              <div key={index}>
+              <div className="each-product" key={index}>
                 <img src={item.image[0]} alt="" />
-                <h4>{item.name}</h4>
-                <p>
-                  {currency} {item.price}
-                </p>
+                <div className="details">
+                  <h4>{item.name}</h4>
+                  <p>
+                    {currency} {item.price}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -51,13 +53,15 @@ const Home = ({ token }) => {
         <div className="offer-product">
           <h1>Offer Product</h1>
           <div className="products">
-            {product.slice(0, 3).map((item, index) => (
-              <div key={index}>
+            {product.slice(3, 6).map((item, index) => (
+              <div className="each-product" key={index}>
                 <img src={item.image[0]} alt="" />
-                <h4>{item.name}</h4>
-                <p>
-                  {currency} {item.price}
-                </p>
+                <div className="details">
+                  <h4>{item.name}</h4>
+                  <p>
+                    {currency} {item.price}
+                  </p>
+                </div>
               </div>
             ))}
           </div>

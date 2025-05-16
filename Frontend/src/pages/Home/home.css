@@ -39,21 +39,39 @@ button {
   justify-items: center;
   gap: 1rem;
 }
-.products img {
-  width: 200px;
-  height: 200px;
+.products .each-product {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-100);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.products .each-product img {
+  width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: center;
   border-radius: 1rem;
   box-shadow: 1px 1px 10px #74000070;
+  margin-bottom: 1rem;
 }
-.products p {
-  font-size: 1.2rem;
+.each-product .details {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.each-product p {
+  font-size: clamp(1.5rem, 5vw, 1.3rem);
   font-weight: 600;
+  text-wrap: nowrap;
 }
-.products h4 {
-  font-size: 0.9rem;
+.each-product h4 {
+  width: 70%;
+  font-size: clamp(1rem, 5vw, 1.3rem);
   font-weight: 500;
 }
 .top-product button {
