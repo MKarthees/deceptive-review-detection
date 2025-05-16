@@ -86,11 +86,11 @@ const Product = ({ token }) => {
                 {price}
               </h1>
             </div>
-            <div className="description-offer">
+            <div className="product-description">
               <p>{description}</p>
-              <h2>{offer}%</h2>
             </div>
-            <div className="btn">
+            <div className="offer-buy">
+              <h2>{offer}%</h2>
               <button onClick={buyHandler}>Buy</button>
             </div>
           </div>
