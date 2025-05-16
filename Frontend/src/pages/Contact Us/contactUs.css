@@ -1,0 +1,14 @@
+.container .contact {
+  grid-row: 2;
+  grid-column: 2;
+}
+.grid .contact {
+  grid-row: 2;
+  grid-column: 1/3;
+}
+@media screen and (max-width: 720px) {
+  .container .contact {
+    grid-row: 2;
+    grid-column: 1/3;
+  }
+}

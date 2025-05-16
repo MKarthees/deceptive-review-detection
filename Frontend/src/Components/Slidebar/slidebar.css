@@ -1,0 +1,124 @@
+.slider-open {
+  width: 200px;
+  min-height: 100dvh;
+  background-color: var(--accent-100);
+  margin: 10px;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  position: fixed;
+  top: 0rem;
+  animation: slidebarOpen 0.5s linear;
+}
+
+.slider-open .slide-bar,
+.slide-xmark {
+  font-size: 2rem;
+  color: var(--accent);
+  cursor: pointer;
+}
+.slider-open ul {
+  margin: 0rem;
+  list-style: none;
+}
+.slider-open ul li {
+  margin: 2rem 0rem;
+  transition: 0.1s ease-in-out;
+  word-wrap: nowrap;
+}
+.slider-open ul i {
+  font-size: 1.8rem;
+  color: var(--accent);
+  cursor: pointer;
+}
+.slider-open ul a {
+  text-decoration: none;
+  color: var(--black);
+}
+.slider-open ul a.active {
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+.slider-open .slide-bar {
+  display: none;
+}
+.slider-open .xmark {
+  display: none;
+}
+.slider-close {
+  width: 100%;
+}
+.slider-close ul {
+  display: none;
+}
+.slider-close .slide-bar {
+  position: fixed;
+  top: 0;
+  margin: 1.2rem;
+  font-size: 2rem;
+  color: var(--accent);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  border-radius: 1rem;
+}
+.slider-close .slide-xmark {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  .slider-open {
+    width: 90%;
+    height: 100dvh;
+    margin: 0;
+    z-index: 999;
+    animation: slidebarPhone 0.5s linear;
+  }
+  .slider-close .slide-bar {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    top: 1rem;
+    margin: 20px 25px;
+    justify-content: center;
+    background-color: var(--accent-200);
+    border-radius: 50% 0.5rem 0.5rem 50%;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    color: var(--accent);
+    cursor: pointer;
+  }
+  .slider-open .slide-xmark {
+    display: none;
+  }
+  .slider-open .xmark {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 2rem;
+    color: var(--accent);
+    cursor: pointer;
+  }
+}
+
+@keyframes slidebarOpen {
+  0% {
+    width: 180px;
+    opacity: 0;
+  }
+  100% {
+    width: 200px;
+    opacity: 1;
+  }
+}
+@keyframes slidebarPhone {
+  0% {
+    width: 50%;
+    opacity: 0;
+  }
+  100% {
+    width: 90%;
+    opacity: 1;
+  }
+}
