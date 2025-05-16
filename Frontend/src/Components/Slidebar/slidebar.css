@@ -21,21 +21,22 @@
   list-style: none;
 }
 .slider-open ul li {
-  margin: 2rem 0rem;
   transition: 0.1s ease-in-out;
   word-wrap: nowrap;
+  padding: 2rem 1rem;
 }
 .slider-open ul i {
-  font-size: 1.8rem;
+  font-size: 3rem;
   color: var(--accent);
   cursor: pointer;
 }
 .slider-open ul a {
+  font-size: 1.3rem;
   text-decoration: none;
   color: var(--black);
 }
 .slider-open ul a.active {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--accent);
 }
 .slider-open .slide-bar {
@@ -69,7 +70,7 @@
 @media screen and (max-width: 720px) {
   .slider-open {
     width: 90%;
-    height: 100dvh;
+    min-height: 100dvh;
     margin: 0;
     z-index: 999;
     animation: slidebarPhone 0.5s linear;
