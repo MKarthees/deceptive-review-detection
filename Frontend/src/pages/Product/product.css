@@ -1,6 +1,5 @@
 .container .product {
   width: 100%;
-  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +9,6 @@
 }
 .grid .product {
   width: 100%;
-  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,6 +21,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  margin: 1rem 0;
 }
 .left {
   width: 50%;
@@ -202,8 +201,7 @@
 @media screen and (max-width: 640px) {
   .product-details {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
   }
   .left {
     width: 100%;
