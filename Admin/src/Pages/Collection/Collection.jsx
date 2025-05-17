@@ -26,7 +26,7 @@ const Collection = ({ token }) => {
   return (
     <main className={`${slider == true ? 'container' : 'grid'}`}>
       <section className="collection">
-        <h1>Products</h1>
+        <h1>All Products</h1>
 
         <div className="collection-headline">
           <p>Image</p>

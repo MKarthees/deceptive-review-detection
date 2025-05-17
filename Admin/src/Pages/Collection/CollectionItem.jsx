@@ -13,13 +13,14 @@ const CollectionItem = ({
 }) => {
   return (
     <Link to={`/product/${id}`}>
-      <div className="product-item">
-        <img src={image} />
-
-        <p className="product-item-name">{name}</p>
-        <p className="product-item-price">₹ {price}</p>
-        <p className="product-item-stock">{stock}</p>
-        <p className="product-item-offer">{offer}%</p>
+      <div className="product">
+        <div className="product-item">
+          <img src={image} />
+          <p className="product-item-name">{name}</p>
+          <p className="product-item-price">₹ {price}</p>
+          <p className="product-item-stock">{stock}</p>
+          <p className="product-item-offer">{offer}%</p>
+        </div>
       </div>
     </Link>
   )
