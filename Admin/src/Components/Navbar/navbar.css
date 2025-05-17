@@ -34,6 +34,7 @@ nav ul {
 }
 .search-box input {
   width: clamp(250px, 50vw, 600px);
+  height: 100%;
   padding: 0.5rem 2rem;
   padding-left: 4rem;
   margin: 0 2rem;
