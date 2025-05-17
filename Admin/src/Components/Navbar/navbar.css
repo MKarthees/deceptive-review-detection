@@ -27,15 +27,14 @@ nav ul {
   display: none;
 }
 .search-box {
-  grid-column: 2;
+  grid-column: 1/4;
   grid-row: 2;
   position: relative;
   padding: 1rem 0;
 }
 .search-box input {
-  width: clamp(250px, 50vw, 600px);
-  height: 100%;
-  padding: 0.5rem 2rem;
+  width: 100%;
+  padding: 1.2rem 2rem;
   padding-left: 4rem;
   margin: 0 2rem;
   outline: none;
@@ -124,6 +123,7 @@ ul a.active {
 @media screen and (max-width: 720px) {
   .search-box input {
     margin: 0 0rem;
+    width: 100%;
   }
   .search-box i {
     left: 0.5rem;
