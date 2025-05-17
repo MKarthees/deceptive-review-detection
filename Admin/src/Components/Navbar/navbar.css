@@ -106,7 +106,7 @@ nav ul i {
   display: none;
 }
 ul a {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -115,7 +115,7 @@ ul a {
   transition: 0.1s;
 }
 ul a.active {
-  scale: 1.1;
+  scale: 1.2;
   text-decoration: none;
   color: var(--accent);
 }
@@ -145,12 +145,12 @@ ul a.active {
     height: 100dvh;
     background-color: var(--accent-100);
     align-items: center;
-    justify-content: flex-start;
-    gap: 0rem;
+    justify-content: center;
+    gap: 4rem;
     z-index: 999;
   }
   nav ul li {
-    margin-top: 3rem;
+    padding: 1rem;
   }
 
   nav ul i {
@@ -158,7 +158,7 @@ ul a.active {
     top: 1rem;
     right: 1rem;
     display: block;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--accent);
   }
   ul a {
