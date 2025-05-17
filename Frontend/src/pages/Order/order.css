@@ -17,27 +17,29 @@
   grid-column: 1/3;
 }
 .order h1 {
+  margin: 1rem;
   text-align: center;
-  font-size: clamp(1rem, 5vw, 1.5rem);
+  font-size: clamp(1.5rem, 5vw, 1.5rem);
 }
 .order form {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 .order form input,
 .order form textarea {
-  width: 100%;
-  padding: 0.5rem 10px;
+  width: 90%;
+  padding: 1rem 10px;
   border-radius: 0.5rem;
   font-size: clamp(12px, 5vw, 1rem);
-  border: 1px solid gray;
+  border: 1px solid var(--accent-200);
   outline: none;
 }
 .order form input::placeholder {
   color: gray;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -61,4 +63,11 @@ input::-webkit-inner-spin-button {
   color: var(--accent);
   cursor: pointer;
   border-radius: 1rem;
+  text-wrap: nowrap;
+}
+.btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
