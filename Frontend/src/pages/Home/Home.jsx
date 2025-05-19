@@ -24,13 +24,13 @@ const Home = ({ token }) => {
   return (
     <main className={`${slider == true ? 'container' : 'grid'}`}>
       <section className="hero">
-        <div className="offer">
+        {/* <div className="offer">
           <h1>20% Today Offer</h1>
-        </div>
+        </div> */}
         <div className="top-product">
           <h1>Top Product</h1>
           <div className="products">
-            {product.slice(0, 3).map((item, index) => (
+            {product.slice(0, 4).map((item, index) => (
               <div className="each-product" key={index}>
                 <img src={item.image[0]} alt="" />
                 <div className="details">
@@ -53,7 +53,7 @@ const Home = ({ token }) => {
         <div className="offer-product">
           <h1>Offer Product</h1>
           <div className="products">
-            {product.slice(3, 6).map((item, index) => (
+            {product.slice(3, 7).map((item, index) => (
               <div className="each-product" key={index}>
                 <img src={item.image[0]} alt="" />
                 <div className="details">

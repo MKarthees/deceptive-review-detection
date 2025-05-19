@@ -66,6 +66,7 @@ const Product = ({ token }) => {
     })
     setShowReview(false)
   }
+
   useEffect(() => {
     eachProduct()
     eachReview()

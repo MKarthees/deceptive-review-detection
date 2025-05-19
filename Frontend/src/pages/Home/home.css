@@ -25,11 +25,12 @@
   justify-content: center;
 }
 .hero .top-product h1,
-button {
-  margin: 1rem;
+.hero .offer-product h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
 }
-.hero .offer-product h1,
-button {
+.hero .top-product button,
+.hero .offer-product button {
   margin: 1rem;
 }
 .products {
@@ -65,14 +66,16 @@ button {
   justify-content: space-between;
 }
 .each-product p {
+  width: 20%;
   font-size: clamp(1.5rem, 5vw, 1.3rem);
   font-weight: 600;
   text-wrap: nowrap;
 }
 .each-product h4 {
   width: 70%;
-  font-size: clamp(1rem, 5vw, 1.3rem);
+  font-size: clamp(0.9rem, 5vw, 1rem);
   font-weight: 500;
+  line-height: 1.5;
 }
 .top-product button {
   padding: 0.7rem 2rem;
