@@ -12,7 +12,7 @@ const Register = () => {
   const [password, setPassword] = useState('')
   const newUser = async () => {
     try {
-      const user = await axios.post(backendURL + 'user/register', {
+      const user = await axios.post(backendURL + '/user/register', {
         name,
         email,
         password,
