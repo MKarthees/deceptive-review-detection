@@ -19,7 +19,6 @@ app.use(express.json())
 const allowOrigins = [
   'https://deceptive-review-detection-admin.onrender.com',
   'https://deceptive-review-detection-frontend.onrender.com',
-  'https://deceptive-review-detection-backend.onrender.com/user/register',
 ]
 app.use(
   cors({
