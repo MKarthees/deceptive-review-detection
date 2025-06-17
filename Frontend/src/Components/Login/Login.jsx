@@ -35,29 +35,29 @@ const Login = ({ setToken }) => {
     <main className={`${slider == true ? 'container' : 'grid'}`}>
       <section className="login">
         <div className="login-container">
-        <h1>Login</h1>
-        <div className="data-box">
-          <input
-            type="text"
-            placeholder="Enter Email"
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-          />
-          <input
-            type="password"
-            placeholder="Enter Password"
-            onChange={(e) => setPassword(e.target.value)}
-            value={password}
-          />
-          <button onClick={getUser}>Submit</button>
-        </div>
-        <div className="details">
-          <p>Don't Have Account?</p>
-          <NavLink to="/register">
-            <p>Click Here</p>
-          </NavLink>
-        </div>
+          <h1>Login</h1>
+          <div className="data-box">
+            <input
+              type="text"
+              placeholder="Enter Email"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+            />
+            <input
+              type="password"
+              placeholder="Enter Password"
+              onChange={(e) => setPassword(e.target.value)}
+              value={password}
+            />
+            <button onClick={getUser}>Submit</button>
           </div>
+          <div className="details">
+            <p>Don't Have Account?</p>
+            <NavLink to="/register">
+              <p>Click Here</p>
+            </NavLink>
+          </div>
+        </div>
       </section>
     </main>
   )

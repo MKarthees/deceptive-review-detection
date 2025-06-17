@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import { MdOutlineShoppingCartCheckout } from 'react-icons/md'
 import { backendURL } from '../../App'
 import { DataContext } from '../../Context/Context'
 import './product.css'
@@ -92,7 +93,11 @@ const Product = ({ token }) => {
             </div>
             <div className="offer-buy">
               <h2>{offer}%</h2>
-              <button onClick={buyHandler}>Buy</button>
+
+              <button onClick={buyHandler}>
+                Buy
+                <MdOutlineShoppingCartCheckout />
+              </button>
             </div>
           </div>
         </div>

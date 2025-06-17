@@ -10,7 +10,7 @@ const Slidebar = () => {
   return (
     <div>
       <aside>
-        <div className={`${slider == true ? 'slider-open' : 'slider-close'}`}>
+        <div className={`${slider === true ? 'slider-open' : 'slider-close'}`}>
           <ul>
             <i onClick={() => setSlider(false)}>
               <HiMiniXMark />

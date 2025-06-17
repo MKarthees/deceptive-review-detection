@@ -3,7 +3,7 @@ import { createContext, useState } from 'react'
 export const DataContext = createContext()
 
 const Context = (props) => {
-  const [slider, setSlider] = useState(true)
+  const [slider, setSlider] = useState(false)
   const [userInput, setUserInput] = useState('')
   const [searchBar, setSearchBar] = useState(false)
   const currency = '₹'

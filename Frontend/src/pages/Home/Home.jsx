@@ -30,8 +30,14 @@ const Home = ({ token }) => {
         <div className="top-product">
           <h1>Top Product</h1>
           <div className="products">
-            {product.slice(0, 3).map((item, index) => (
-              <div className="each-product" key={index}>
+            {product.slice(0, 4).map((item, index) => (
+              <div
+                className="each-product"
+                key={index}
+                onClick={() => {
+                  navigate('/shop')
+                }}
+              >
                 <img src={item.image[0]} alt="" />
                 <div className="details">
                   <h4>{item.name}</h4>
@@ -42,19 +48,18 @@ const Home = ({ token }) => {
               </div>
             ))}
           </div>
-          <button
-            onClick={() => {
-              navigate('/shop')
-            }}
-          >
-            View More
-          </button>
         </div>
         <div className="offer-product">
           <h1>Offer Product</h1>
           <div className="products">
-            {product.slice(3, 6).map((item, index) => (
-              <div className="each-product" key={index}>
+            {product.slice(10, 14).map((item, index) => (
+              <div
+                className="each-product"
+                key={index}
+                onClick={() => {
+                  navigate('/shop')
+                }}
+              >
                 <img src={item.image[0]} alt="" />
                 <div className="details">
                   <h4>{item.name}</h4>
@@ -65,13 +70,6 @@ const Home = ({ token }) => {
               </div>
             ))}
           </div>
-          <button
-            onClick={() => {
-              navigate('/shop')
-            }}
-          >
-            View More
-          </button>
         </div>
       </section>
     </main>
